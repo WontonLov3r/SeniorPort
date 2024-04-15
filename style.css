@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    background: #1b1b1b;
+    color: #e5e5e5;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.43;
+    letter-spacing: .01071em;
+}
+
+html {
+    font-size: 18px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 64px;
+}
+
+.socials {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position:relative;
+}
+
+.land {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pfp {
+    width:10%;
+    height:10%;
+}
+
+.bgyes {
+    background-image: url("hi.png");
+    min-height: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
