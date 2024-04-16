@@ -39,6 +39,11 @@ html {
     height:10%;
 }
 
+.psp {
+    width:40;
+    height:40;
+}
+
 .bgyes {
     background-image: url("hi.png");
     min-height: 100%;
