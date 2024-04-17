@@ -71,7 +71,7 @@ html {
 }
 
 .bgno {
-    background-image: url("pooh.jpg");
+    background-image: url("pooh.png");
     min-height: 100%;
     position: relative;
     background-attachment: fixed;
@@ -87,31 +87,37 @@ html {
 #rectangle{
     width:400px;
     height:500px;
-    background:white;
+    background:gray;
     margin-left:200px;
 }
 
 #rectangle1{
+    bottom: 450px;
     width:300px;
     height:100px;
     background:white;
-    margin-left:200px;
+    margin-left:250px;
     margin-bottom:50px;
+    position:relative;
 }
 
 #rectangle2{
+    bottom: 450px;
     width:300px;
     height:100px;
     background:white;
-    margin-left:200px;
+    margin-left:250px;
     margin-bottom:50px;
+    position:relative;
 }
 
 #rectangle3{
+    bottom: 450px;
     width:300px;
     height:100px;
     background:white;
-    margin-left:200px;
+    margin-left:250px;
     margin-bottom:50px;
+    position:relative;
 }
 
