@@ -121,3 +121,11 @@ html {
     position:relative;
 }
 
+.bubble {
+    width:600px;
+}
+
+* {
+    --bs-gutter-x :0 !important;
+}
+
