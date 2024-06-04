@@ -15,28 +15,9 @@ html {
     scroll-padding-top: 64px;
 }
 
-.socials {
-    margin-top: 32px;
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    position:relative;
-}
 .psc {
     width:50px;
     height:50px;
-}
-
-.land {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    position:relative;
 }
 
 .pfp {
@@ -45,7 +26,6 @@ html {
 }
 
 .bgyes {
-    background-image: url("hi.png");
     min-height: 100%;
     position: relative;
     background-attachment: fixed;
@@ -64,20 +44,15 @@ html {
 
 .navbar {
     min-height:80px;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    background: rgba(51, 51, 51, 0); /* Initially transparent */
+    color: white;
+    transition: background 0.5s ease-in-out;
 }
 
 .center {
     text-align: center;
-}
-
-.bgno {
-    background-image: url("pooh.png");
-    min-height: 100%;
-    position: relative;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .black {
@@ -135,4 +110,189 @@ html {
     overflow:hidden;
 }
 
+#hero {
+    min-height: 100vh;
+    height: 100vh;
+    color: #272341;
+    z-index: -1;
+    background: #BBD1EA;
+    border-bottom: 0;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0 5.6rem;
+    display: flex;
+    inset: 0;
+    background-image: url("wallpaper.jpg");
+}
 
+
+#hero .hero-title {
+    text-align: left;
+    margin-bottom: 3.2rem;
+    font-size: 5.6rem;
+    font-weight: 700;
+}
+
+.text-color-main {
+    color: #507DBC;
+    -webkit-text-fill-color: #507DBC;
+}
+
+.typewriter{
+    position: relative;
+    font-weight:bold;
+}
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: black;
+    background-color: #BBD1EA;
+    width: 100%;
+    animation: typing 3s steps(40) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+
+.scroll {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #333;
+	border-radius: 50%;
+	position: relative;
+	animation: down 1.5s infinite;
+	-webkit-animation: down 1.5s infinite;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 15px;
+		left: 18px;
+		width: 18px;
+		height: 18px;
+		border-left: 2px solid #333;
+  	border-bottom: 2px solid #333;
+		transform: rotate(-45deg);
+	}
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.field {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 300px;
+}
+
+.bottom-center {
+    position: absolute;
+    top:20%;
+    left: 50%;
+}
+
+.section-title {
+    padding-top:50px;
+    text-transform: uppercase;
+    margin: 0 0 4.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+#about {
+    color: #fff;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-color: #507DBC;
+    background-image: linear-gradient(135deg, #385781 0%, #69a5f9 100%);
+    border-top: 0;
+    padding-bottom: 10%;
+}
+
+#exp {
+    color: #fff;
+    height: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-color: #274C77;
+    background-image: linear-gradient(135deg, #274C77 0%, #3976bb 100%);
+    border-top: 0;
+    padding-bottom: 10%;
+}
+
+.rounded {
+    border-radius: var(--bs-border-radius) !important;
+}
+
+.shadow-lg {
+    box-shadow: 0 1rem 3rem #0000002d !important;
+}
+
+#about .about-wrapper__image {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.container2 {
+    display: flex; 
+    justify-content: center; 
+    gap: 50px; 
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  
+  .button-icon {
+    background: none; 
+    border: none;
+  }
+  
+  .button-icon:hover {
+    cursor: pointer;
+    color: lightgray;
+  }
+  
+  .box {
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .spacing {
+    padding-bottom: 25px;
+  }
+
+  .white {
+    color:white;
+  }
