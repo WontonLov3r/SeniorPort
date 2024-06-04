@@ -296,3 +296,27 @@ html {
   .white {
     color:white;
   }
+
+  .resumebtn {
+    color: #fff;
+    border: 2px solid #fff;
+  }
+
+  .cta-btn {
+    z-index: 1;
+    padding: .8rem 1.6rem;
+    font-weight: 700;
+    line-height: 1;
+    transition: all .6s cubic-bezier(.19,1,.22,1);
+    display: inline-block;
+    position: relative;
+}
+
+p, a {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+}
+
+a, a:link, a:hover, a:visited, a:active {
+    text-decoration: none !important;
+}
